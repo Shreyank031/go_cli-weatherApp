@@ -27,6 +27,21 @@ https://github.com/Shreyank031/go_cli-weatherApp.git
 ```bash
 cd go_cli-weatherApp
 ```
+**Setting up your `.env` file**
+
+This weather CLI application utilizes the `godotenv` package to manage the API key securely. Here's how to configure it:
+
+1. Create a .env file:
+Create a file named .env in the root directory of your project (where the main.go file resides).
+
+2. Add your API key:
+
+Inside the .env file, add a line in the following format:
+```
+ApiKey=<your_api_key>
+```
+Replace <your_api_key> with the actual API key obtained from the [Weather API website](https://www.weatherapi.com/docs/).
+
 
 **Download the dependencies**
 ```bash
