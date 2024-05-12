@@ -104,7 +104,7 @@ func main() {
 		}
 
 		message := fmt.Sprintf(
-			"%s, - %.0f°C, %.0f%%, %s\n",
+			"%s - %.0f°C, %.0f%%, %s\n",
 			date.Format("15.04"),
 			hour.TempC,
 			hour.ChanceOfRain,
