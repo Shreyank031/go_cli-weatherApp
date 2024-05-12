@@ -91,7 +91,7 @@ func main() {
 	location, current, hours := weather.Location, weather.Current, weather.Forecast.ForecastDay[0].Hour
 
 	fmt.Printf(
-		"%s, %s: %.0fC, %s\nLocal Time: %s",
+		"%s, %s: %.0f°C, %s\nLocal Time: %s",
 		location.Name, location.Country, current.TempC, current.Condition.Text, location.LocalTime,
 	)
 	fmt.Println("\nToday's upcoming forcast: ")
@@ -104,7 +104,7 @@ func main() {
 		}
 
 		message := fmt.Sprintf(
-			"%s, - %.0fC, %.0f%%, %s\n",
+			"%s, - %.0f°C, %.0f%%, %s\n",
 			date.Format("15.04"),
 			hour.TempC,
 			hour.ChanceOfRain,
@@ -117,4 +117,5 @@ func main() {
 		}
 
 	}
+	fmt.Println()
 }
